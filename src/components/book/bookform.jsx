@@ -1,18 +1,32 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 import './bookform.css';
 
 function BookForm() {
   const location = useLocation();
+  const navigate = useNavigate();
   const { restaurant } = location.state || {};
 
   const [selectedDate, setSelectedDate] = useState(restaurant.availableDates[0]);
+  const [selectedTime, setSelectedTime] = useState('12:00');
   const [guestCount, setGuestCount] = useState(1);
   const [specialRequests, setSpecialRequests] = useState('');
 
+  const mockbookingdetails = {
+    restaurantName: 'Mock restraunt',
+    selectedDate: '01.04.2024',
+    selectedTime: '12:00',
+    guestCount: '2',
+    specialRequests: 'no smoking table'
+  }
+
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
+  };
+
+  const handleTimeChange = (event) => {
+    setSelectedTime(event.target.value);
   };
 
   const handleGuestCountChange = (event) => {
@@ -23,15 +37,35 @@ function BookForm() {
     setSpecialRequests(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Submit booking information here
-    console.log({
-      restaurantId: restaurant.restaurantId,
-      selectedDate,
-      guestCount,
-      specialRequests,
-    });
+    navigate('/notification', { state: { bookingDetails: mockbookingdetails } });
+    // try {
+    //   const response = await fetch('Endpoint_URL', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       restaurantId: restaurant.restaurantId,
+    //       selectedDate,
+    //       selectedTime,
+    //       guestCount,
+    //       specialRequests,
+    //     }),
+    //   });
+
+    //   if (response.ok) {
+    //     const bookingDetails = await response.json();
+    //     navigate('/notification', { state: { bookingDetails } });
+    //   } else {
+    //     // Handle errors, e.g., show an error message to the user
+    //     console.error('Failed to submit booking:', response.statusText);
+    //   }
+    // } catch (error) {
+    //   // Handle network errors, e.g., show an error message to the user
+    //   console.error('Network error:', error.message);
+    // }
   };
 
   return (
@@ -47,6 +81,15 @@ function BookForm() {
               </option>
             ))}
           </select>
+        </label>
+        <label className='bookform-label'>
+          Choose a time:
+          <input
+            className='bookform-input'
+            type='time'
+            value={selectedTime}
+            onChange={handleTimeChange}
+          />
         </label>
         <label className='bookform-label'>
           Number of guests:

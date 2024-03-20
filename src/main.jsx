@@ -9,6 +9,7 @@ import ErrorPage from './roots/error/ErrorPage.jsx'
 import Auth from './roots/authentication/authentication.jsx';
 import Homepage from './roots/homepage/homepage.jsx';
 import BookForm from './components/book/bookform.jsx';
+import NotificationPage from './components/notification/notification.jsx';
 
 import './index.css';
 
@@ -21,6 +22,7 @@ const routes = [
       { path: "auth", element: <Auth /> },
       { path: "restraunts", element: <Homepage /> },
       { path: "book", element: <BookForm /> },
+      { path: "notification", element: <NotificationPage /> },
     ]
   },
 ];

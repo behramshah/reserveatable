@@ -9,10 +9,18 @@ function Homepage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch(`Endpoint?searchTerm=${searchTerm}&bookingDate=${bookingDate}`);
-    const data = await response.json();
-    setSearchResults(data);
+    try {
+      const response = await fetch(`Endpoint?searchTerm=${searchTerm}&bookingDate=${bookingDate}`);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setSearchResults(data);
+    } catch (error) {
+      console.error('There has been a problem with your fetch operation:', error);
+    }
   };
+  
 
   return (
     <>
