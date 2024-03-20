@@ -1,0 +1,69 @@
+.search-form {
+    display: flex;
+    gap: 0.8em;
+    margin: 1em;
+  }
+  
+  .search-input,
+  .date-input {
+    min-width: 50px;
+    padding: 0.6em;
+    border-radius: 8px;
+    border: 1px solid #646cff;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+  }
+  
+  .search-input::placeholder,
+  .date-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-input:focus,
+  .date-input:focus {
+    outline: none;
+    border-color: #535bf2;
+  }
+  
+  .search-button {
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #646cff;
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.25s, transform 0.25s;
+  }
+  
+  .search-button:hover {
+    background-color: #535bf2;
+    transform: translateY(-2px);
+  }
+  
+  .search-button:focus {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .search-input,
+    .date-input {
+      background-color: #ffffff;
+      color: #213547;
+      border: 1px solid #747bff;
+    }
+  
+    .search-input::placeholder,
+    .date-input::placeholder {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  
+    .search-button {
+      background-color: #747bff;
+      color: #ffffff;
+    }
+  }
+  

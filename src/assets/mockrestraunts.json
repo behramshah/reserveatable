@@ -1,0 +1,65 @@
+[
+    {
+      "restaurantId": "res101",
+      "restaurantName": "Ocean's Delight",
+      "availableDates": ["2024-05-01", "2024-05-02"],
+      "tablesAvailable": 5,
+      "address": "123 Seaside Blvd, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d101",
+          "name": "Grilled Salmon",
+          "price": "20.00"
+        },
+        {
+          "dishId": "d102",
+          "name": "Caesar Salad",
+          "price": "10.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r101",
+          "rating": 4.5,
+          "comment": "Great atmosphere and fresh seafood."
+        },
+        {
+          "reviewId": "r102",
+          "rating": 5,
+          "comment": "The grilled salmon is a must-try!"
+        }
+      ]
+    },
+    {
+      "restaurantId": "res102",
+      "restaurantName": "The Spice Route",
+      "availableDates": ["2024-05-03", "2024-05-04"],
+      "tablesAvailable": 3,
+      "address": "47 Spice Market St, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d201",
+          "name": "Chicken Tikka Masala",
+          "price": "15.00"
+        },
+        {
+          "dishId": "d202",
+          "name": "Paneer Butter Masala",
+          "price": "12.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r201",
+          "rating": 4,
+          "comment": "Authentic flavors and friendly service."
+        },
+        {
+          "reviewId": "r202",
+          "rating": 4.5,
+          "comment": "Best Indian food in the city!"
+        }
+      ]
+    }
+  ]
+  
