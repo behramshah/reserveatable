@@ -8,6 +8,7 @@ import CustomNavigation from './roots/navigation/CustomNavigation.jsx';
 import ErrorPage from './roots/error/ErrorPage.jsx'
 import Auth from './roots/authentication/authentication.jsx';
 import Homepage from './roots/homepage/homepage.jsx';
+import BookForm from './components/book/bookform.jsx';
 
 import './index.css';
 
@@ -18,8 +19,8 @@ const routes = [
     errorElement: <ErrorPage/>,
     children: [
       { path: "auth", element: <Auth /> },
-      { path: "homepage", element: <Homepage /> },
-      // { path: "book", element: <Book /> },
+      { path: "restraunts", element: <Homepage /> },
+      { path: "book", element: <BookForm /> },
     ]
   },
 ];

@@ -1,7 +1,9 @@
 .search-form {
+    width: 100vw;
     display: flex;
     gap: 0.8em;
     margin: 1em;
+    justify-content: center;
   }
   
   .search-input,

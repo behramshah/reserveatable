@@ -1,0 +1,31 @@
+[
+    {
+      "id": "offer1",
+      "title": "Summer Specials",
+      "description": "Enjoy our exclusive summer menu with a 20% discount!",
+      "image": "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "https://www.pexels.com/photo/person-holding-pastry-dishes-on-white-ceramic-plates-262978/"
+    },
+    {
+      "id": "offer2",
+      "title": "Live Music Nights",
+      "description": "Join us for live music every Friday and Saturday night!",
+      "image": "https://images.pexels.com/photos/2735037/pexels-photo-2735037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "link_to_live_music_events"
+    },
+    {
+      "id": "offer3",
+      "title": "Wine Tasting Event",
+      "description": "Explore fine wines with our expert sommeliers on Sunday evenings.",
+      "image": "https://images.pexels.com/photos/696218/pexels-photo-696218.jpeg",
+      "link": "link_to_wine_tasting_event"
+    },
+    {
+      "id": "offer4",
+      "title": "New Year's Eve Gala",
+      "description": "Celebrate the New Year with a spectacular gala dinner and party.",
+      "image": "https://images.pexels.com/photos/3171770/pexels-photo-3171770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "link": "link_to_new_years_eve_gala"
+    }
+  ]
+  

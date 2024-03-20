@@ -5,9 +5,6 @@ import mockrestraunts from '../../assets/mockrestraunts.json'
 
 function List() {
 
-//   const data = JSON.parse(mockrestraunts)
-   console.log(mockrestraunts)
-
   return (
     <ul>
       {mockrestraunts.map((restaurant) => (
