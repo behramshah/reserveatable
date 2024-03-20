@@ -62,7 +62,7 @@
       ]
     },
     {
-      "restaurantId": "res101",
+      "restaurantId": "res103",
       "restaurantName": "Ocean's Delight 777",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "restaurantId": "res101",
+      "restaurantId": "res104",
       "restaurantName": "Ocean",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
@@ -124,7 +124,131 @@
       ]
     },
     {
-      "restaurantId": "res101",
+      "restaurantId": "res105",
+      "restaurantName": "Ocean's Fish",
+      "availableDates": ["2024-05-01", "2024-05-02"],
+      "tablesAvailable": 5,
+      "address": "123 Seaside Blvd, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d101",
+          "name": "Grilled Salmon",
+          "price": "20.00"
+        },
+        {
+          "dishId": "d102",
+          "name": "Caesar Salad",
+          "price": "10.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r101",
+          "rating": 4.5,
+          "comment": "Great atmosphere and fresh seafood."
+        },
+        {
+          "reviewId": "r102",
+          "rating": 5,
+          "comment": "The grilled salmon is a must-try!"
+        }
+      ]
+    },
+    {
+      "restaurantId": "res106",
+      "restaurantName": "Delight",
+      "availableDates": ["2024-05-01", "2024-05-02"],
+      "tablesAvailable": 5,
+      "address": "123 Seaside Blvd, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d101",
+          "name": "Grilled Salmon",
+          "price": "20.00"
+        },
+        {
+          "dishId": "d102",
+          "name": "Caesar Salad",
+          "price": "10.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r101",
+          "rating": 4.5,
+          "comment": "Great atmosphere and fresh seafood."
+        },
+        {
+          "reviewId": "r102",
+          "rating": 5,
+          "comment": "The grilled salmon is a must-try!"
+        }
+      ]
+    },
+    {
+      "restaurantId": "res107",
+      "restaurantName": "Ocean's Modern",
+      "availableDates": ["2024-05-01", "2024-05-02"],
+      "tablesAvailable": 5,
+      "address": "123 Seaside Blvd, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d101",
+          "name": "Grilled Salmon",
+          "price": "20.00"
+        },
+        {
+          "dishId": "d102",
+          "name": "Caesar Salad",
+          "price": "10.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r101",
+          "rating": 4.5,
+          "comment": "Great atmosphere and fresh seafood."
+        },
+        {
+          "reviewId": "r102",
+          "rating": 5,
+          "comment": "The grilled salmon is a must-try!"
+        }
+      ]
+    },
+    {
+      "restaurantId": "res108",
+      "restaurantName": "Xan's Delight",
+      "availableDates": ["2024-05-01", "2024-05-02"],
+      "tablesAvailable": 5,
+      "address": "123 Seaside Blvd, Sumgayit",
+      "menu": [
+        {
+          "dishId": "d101",
+          "name": "Grilled Salmon",
+          "price": "20.00"
+        },
+        {
+          "dishId": "d102",
+          "name": "Caesar Salad",
+          "price": "10.00"
+        }
+      ],
+      "guestOverviews": [
+        {
+          "reviewId": "r101",
+          "rating": 4.5,
+          "comment": "Great atmosphere and fresh seafood."
+        },
+        {
+          "reviewId": "r102",
+          "rating": 5,
+          "comment": "The grilled salmon is a must-try!"
+        }
+      ]
+    },
+    {
+      "restaurantId": "res109",
       "restaurantName": "Ocean's Delight",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
@@ -155,7 +279,7 @@
       ]
     },
     {
-      "restaurantId": "res101",
+      "restaurantId": "res110",
       "restaurantName": "Ocean's Delight",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
@@ -186,7 +310,7 @@
       ]
     },
     {
-      "restaurantId": "res101",
+      "restaurantId": "res111",
       "restaurantName": "Ocean's Delight",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
@@ -217,131 +341,7 @@
       ]
     },
     {
-      "restaurantId": "res101",
-      "restaurantName": "Ocean's Delight",
-      "availableDates": ["2024-05-01", "2024-05-02"],
-      "tablesAvailable": 5,
-      "address": "123 Seaside Blvd, Sumgayit",
-      "menu": [
-        {
-          "dishId": "d101",
-          "name": "Grilled Salmon",
-          "price": "20.00"
-        },
-        {
-          "dishId": "d102",
-          "name": "Caesar Salad",
-          "price": "10.00"
-        }
-      ],
-      "guestOverviews": [
-        {
-          "reviewId": "r101",
-          "rating": 4.5,
-          "comment": "Great atmosphere and fresh seafood."
-        },
-        {
-          "reviewId": "r102",
-          "rating": 5,
-          "comment": "The grilled salmon is a must-try!"
-        }
-      ]
-    },
-    {
-      "restaurantId": "res101",
-      "restaurantName": "Ocean's Delight",
-      "availableDates": ["2024-05-01", "2024-05-02"],
-      "tablesAvailable": 5,
-      "address": "123 Seaside Blvd, Sumgayit",
-      "menu": [
-        {
-          "dishId": "d101",
-          "name": "Grilled Salmon",
-          "price": "20.00"
-        },
-        {
-          "dishId": "d102",
-          "name": "Caesar Salad",
-          "price": "10.00"
-        }
-      ],
-      "guestOverviews": [
-        {
-          "reviewId": "r101",
-          "rating": 4.5,
-          "comment": "Great atmosphere and fresh seafood."
-        },
-        {
-          "reviewId": "r102",
-          "rating": 5,
-          "comment": "The grilled salmon is a must-try!"
-        }
-      ]
-    },
-    {
-      "restaurantId": "res101",
-      "restaurantName": "Ocean's Delight",
-      "availableDates": ["2024-05-01", "2024-05-02"],
-      "tablesAvailable": 5,
-      "address": "123 Seaside Blvd, Sumgayit",
-      "menu": [
-        {
-          "dishId": "d101",
-          "name": "Grilled Salmon",
-          "price": "20.00"
-        },
-        {
-          "dishId": "d102",
-          "name": "Caesar Salad",
-          "price": "10.00"
-        }
-      ],
-      "guestOverviews": [
-        {
-          "reviewId": "r101",
-          "rating": 4.5,
-          "comment": "Great atmosphere and fresh seafood."
-        },
-        {
-          "reviewId": "r102",
-          "rating": 5,
-          "comment": "The grilled salmon is a must-try!"
-        }
-      ]
-    },
-    {
-      "restaurantId": "res101",
-      "restaurantName": "Ocean's Delight",
-      "availableDates": ["2024-05-01", "2024-05-02"],
-      "tablesAvailable": 5,
-      "address": "123 Seaside Blvd, Sumgayit",
-      "menu": [
-        {
-          "dishId": "d101",
-          "name": "Grilled Salmon",
-          "price": "20.00"
-        },
-        {
-          "dishId": "d102",
-          "name": "Caesar Salad",
-          "price": "10.00"
-        }
-      ],
-      "guestOverviews": [
-        {
-          "reviewId": "r101",
-          "rating": 4.5,
-          "comment": "Great atmosphere and fresh seafood."
-        },
-        {
-          "reviewId": "r102",
-          "rating": 5,
-          "comment": "The grilled salmon is a must-try!"
-        }
-      ]
-    },
-    {
-      "restaurantId": "res101",
+      "restaurantId": "res112",
       "restaurantName": "Ocean's Delight",
       "availableDates": ["2024-05-01", "2024-05-02"],
       "tablesAvailable": 5,
