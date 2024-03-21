@@ -9,7 +9,6 @@ const CustomLink = () => {
   const handleSignOut = async() => {
     await signOutUser();
     setCurrentUser(null);
-    // Redirect to home or any other actions needed after sign out
   };
 
   return (
