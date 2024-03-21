@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { UserContext } from "../../contexts/user-context";
 
 import './bookform.css';
 
@@ -12,6 +13,7 @@ function BookForm() {
   const [selectedTime, setSelectedTime] = useState('12:00');
   const [guestCount, setGuestCount] = useState(1);
   const [specialRequests, setSpecialRequests] = useState('');
+  const { currentUser } = useContext(UserContext);
 
   const mockbookingdetails = {
     restaurantName: 'Mock restraunt',
@@ -39,7 +41,11 @@ function BookForm() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    navigate('/notification', { state: { bookingDetails: mockbookingdetails } });
+    if(currentUser){
+      navigate('/notification', { state: { bookingDetails: mockbookingdetails } });
+    } else {
+      navigate('/auth');
+    }
     // try {
     //   const response = await fetch('Endpoint_URL', {
     //     method: 'POST',

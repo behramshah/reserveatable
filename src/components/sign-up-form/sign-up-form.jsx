@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils.js/firebase';
 import { UserContext } from "../../contexts/user-context";
+import { useNavigate } from 'react-router-dom';
 
 import './sign-up-form.css';
 
@@ -17,6 +18,7 @@ const SignUpForm = () => {
     const { displayName, email, password, confirmPassword} = formFields;
     const { setCurrentUser } = useContext(UserContext);
     const resetFormFields = () => setFormFields(defaultFormFields);
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -33,7 +35,8 @@ const SignUpForm = () => {
             const {user} = await createAuthUserWithEmailAndPassword(email, password);
             await createUserDocumentFromAuth(user, { displayName })
             resetFormFields();
-            setCurrentUser(user);    
+            setCurrentUser(user);
+            navigate('/restraunts')    
         } catch (error) {
             if(error.code === 'auth/email-already-in-use'){
                 alert('already used email choose another')
