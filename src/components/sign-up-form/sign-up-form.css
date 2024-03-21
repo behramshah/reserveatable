@@ -1,0 +1,62 @@
+.signUpContainer {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.authtitle {
+    margin: 10px 0;
+}
+
+form {
+    position: relative;
+    margin: 45px 0;
+}
+
+.basebutton {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 35px 0 35px;
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    justify-content: center;
+    background-color: black;
+}
+
+.basebutton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.authlabel {
+    color: grey;
+    font-size: 16px;
+    font-weight: normal;    
+    left: 5px;
+    top: 10px;
+}
+
+.authinput {
+    background: none;
+    background-color: white;
+    color: grey;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid grey;
+    margin: 25px 0;
+}
+
+.authinput:focus {outline: none;}
