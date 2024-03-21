@@ -5,6 +5,7 @@ import {
     signInAuthUserWithEmailAndPassword
 } from '../../utils.js/firebase';
 import { UserContext } from '../../contexts/user-context';
+import { useNavigate } from 'react-router-dom';
 
 import './sign-in-form.css'
 
@@ -23,6 +24,7 @@ const SignInForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { email, password} = formFields;
     const { setCurrentUser } = useContext(UserContext);
+    const navigate = useNavigate();
     
     const resetFormFields = () => setFormFields(defaultFormFields);
 
@@ -37,7 +39,8 @@ const SignInForm = () => {
         try {
             const { user } = await signInAuthUserWithEmailAndPassword(email, password);
             setCurrentUser(user)
-            resetFormFields();                
+            resetFormFields();
+            navigate('/restraunts')                
         } catch (error) {
             switch (error.code){
                 case 'auth/wrong-password':

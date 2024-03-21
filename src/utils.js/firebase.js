@@ -5,7 +5,6 @@ import {
     signInWithPopup,
     signInWithRedirect, 
     GoogleAuthProvider,
-    onAuthStateChanged,
     signInWithEmailAndPassword,
     createUserWithEmailAndPassword,
  } from "firebase/auth";
@@ -14,10 +13,6 @@ import {
     doc,
     getDoc,
     setDoc,
-    collection,
-    writeBatch,
-    query,
-    getDocs
 } from 'firebase/firestore';
 
 const firebaseConfig = {
