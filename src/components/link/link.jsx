@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../contexts/user-context.jsx';
+import { signOutUser } from '../../utils.js/firebase.js';
 
 const CustomLink = () => {
   const { currentUser, setCurrentUser } = useContext(UserContext);
   
-  const handleSignOut = () => {
-    // Logic for signing out
+  const handleSignOut = async() => {
+    await signOutUser();
     setCurrentUser(null);
     // Redirect to home or any other actions needed after sign out
   };
